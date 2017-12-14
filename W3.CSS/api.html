@@ -1,0 +1,43 @@
+<DOCTYPE data-cloud9-id='5' html>
+
+    <html data-cloud9-id='1'>
+    
+    <head data-cloud9-id='2'>
+        <script data-cloud9-id='6' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            
+        </script>
+        <script data-cloud9-id='7'>
+            $(document).ready(function() {
+                $("button").click(function(){
+                    $.ajax({
+                    url:" https://data.cityofchicago.org/resource/cwig-ma7x.json",
+                    success: function(result) {
+                        console.log(result)
+                    }
+                });     
+                });
+                
+            });
+        </script>
+        
+        
+
+      
+    </head>
+
+    <body data-cloud9-id='3'>
+
+        <div data-cloud9-id='8' id="div1">
+            <h2 data-cloud9-id='9'>jQuery and APIs</h2>
+        </div>
+
+        <button data-cloud9-id='10'>data</button>
+        
+        <div data-cloud9-id='11' id="results">
+            
+        </div>
+    </body>
+
+    </html>
+
+<script src="/_static/preview/livecss.js"></script>
