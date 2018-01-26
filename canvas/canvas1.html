@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rectangle Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="700" height="500"></canvas>
+ 
+    <script>
+ var canvasElement = document.querySelector("#myCanvas");
+var context = canvasElement.getContext("2d");
+ 
+// the rectangle
+context.beginPath();
+context.rect(100, 100, 5, 500);
+context.closePath();
+ 
+// the outline
+context.lineWidth = 10;
+context.strokeStyle = '#666666';
+context.stroke();
+ 
+// the fill color
+context.fillStyle = "#51DCFF";
+context.fill();
+    
+ // draw the colored region
+    context.beginPath();
+    context.arc(200, 200, 93, 0, 2 * Math.PI, true);
+    context.fillStyle = "#51DCFF";
+    context.fill();
+ 
+    // draw the stroke
+    context.lineWidth = 20;
+    context.strokeStyle = "#66CC01";
+    context.stroke();    
+
+// Transform
+context.translate(30, 187);
+context.rotate(45 * Math.PI / 180);
+ 
+// Text
+context.font = "bold 48px Helvetica, Arial, sans-serif";
+context.fillStyle = "steelblue";
+context.fillText("-----------------------------------------", 150, 3);
+
+context.resetTransform();
+
+// the rectangle
+context.beginPath();
+context.rect(400, 100, 10, 500);
+context.closePath();
+ 
+// the outline
+context.lineWidth = 10;
+context.strokeStyle = '#666666';
+context.stroke();
+ 
+// the fill color
+context.fillStyle = "#51DCFF";
+context.fill();
+    
+ // draw the colored region
+    context.beginPath();
+    context.arc(500, 200, 93, 0, 2 * Math.PI, true);
+    context.fillStyle = "#51DCFF";
+    context.fill();
+ 
+    // draw the stroke
+    context.lineWidth = 20;
+    context.strokeStyle = "#66CC01";
+    context.stroke();    
+
+
+    
+    </script>
+
+
+
+ 
+</body>
+</html>
