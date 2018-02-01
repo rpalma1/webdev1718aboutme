@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+    background-color: #00CED1;
+}
+
+u { 
+    text-decoration: underline;
+}
+
+}
+</style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+</style>
+
+</head>
+<body>
+
+<p/p>
+<u>Ramon Palma </u>
+<p><i>period 1</i></p>
+<div class="media" style="max-height: 1px">
+<div class="media" style="max-width: 1px">
+<div class="frame" style="padding-top: 00.0%">
+<img src="https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B7WCemMG6e0VU1RSV0tORnl5a2M/what-is-material-material-properties.png" width="1000" height="1000" alt="Computer Hope">
+
+
+</div>
+<hr>
+
+<p><strong>:</strong></p>
+<p>
+<img src="https://www.dmplayhouse.com/wp-content/uploads/2016/03/Gatsby-1.jpg" alt="The great gatspy" style="float:left;width:300px;height:300px;">
+<p></p>
+
+<hr>
+<button type="button" onclick="" a href="aboutme.1.html">About me  </a> </button>
+
+
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">The rock</h4>
+    <p class="card-text"></p>
+    <a href="http://www.slate.com/content/dam/slate/blogs/xx_factor/2016/04/11/the_rock_says_he_looks_like_a_buff_lesbian/the_rock_turtleneck.jpg.CROP.promovar-mediumlarge.jpg" class="btn btn-primary"></a>
+  </div>
+
+
+
+
+</body>
+<body>
+
+<div class="container">
+  <h2></h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+  
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+       <h2> </h2>
+        <img src="https://tastetheislandstv.com/wp-content/uploads/2015/09/Tostones.jpg" alt="tostones" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://assets.bonappetit.com/photos/58a3509cf12ac6e639bf24af/16:9/w_1200,c_limit/argentinian-chicken-empanadas.jpg" alt="Empanadas" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="http://hispanickitchen.com/wp-content/uploads/2016/12/NEW-arroz-con-gandules-landscape-high-res.jpg-copy.jpg" alt="cuban rice" style="width:100%;">
+      </div>
+    </div>
+    
+    
+    
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://data.cityofchicago.org/resource/tt4n-kn4t.json", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
