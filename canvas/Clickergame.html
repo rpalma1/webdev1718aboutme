@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+</head>
+
+<body>
+    Number: <span id="num">0</span><br>
+    <button id="add" onclick="add()">+</button>
+    <button id="rmv" onclick="rmv()">-</button>
+</body>
+
+<body>
+    <style>
+        body {
+            background-color: #456;
+            height: 100%;
+        }
+
+        #add {
+            background-size: 100px 100px;
+            margin-top: 15px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #rmv {
+            background-size: 100px 100px;
+            margin-top: 15px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</body>
+
+<script>
+    function add() {
+
+        t = Number(document.getElementById("num").innerHTML);
+
+        if (t >= 10) {
+            var add = 10;
+            if (t >= 100) {
+                var add = 100;
+                if (t >= 1000) {
+                    var add = 1000;
+                    if (t >= 10000) {
+                        var add = 10000;
+                        if (t >= 100000) {
+                            var add = 100000;
+                            if (t >= 1000000) {
+                                var add = 1000000;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else {
+            var add = 1;
+        }
+
+        document.getElementById("num").innerHTML = t + add;
+    }
+
+    function rmv() {
+
+        t = Number(document.getElementById("num").innerHTML);
+
+        if (t <= -10) {
+            var rmv = 10;
+            if (t <= -100) {
+                var rmv = 100;
+                if (t <= -1000) {
+                    var rmv = 1000;
+                }
+            }
+        }
+        else {
+            var rmv = 1;
+        }
+
+        document.getElementById("num").innerHTML = t - rmv;
+    }
+</script>
+
+</html>
